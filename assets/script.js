@@ -60,12 +60,13 @@ function generatePassword () {
 
 
   // generate a password using Math.random
-  for (var i =0; i < passwordLength; i++) {
-    var j = charactersBase[Math.floor(Math.random() * charactersChoices)]
-    
-    return password 
+  var j = "";
+  // generate a password using Math.random
+  for (var i = 0; i < passwordLength; i++) {
+    j += charactersBase[Math.floor(Math.random() * charactersBase.length)]
   }
 
+  return j;
 
 
 

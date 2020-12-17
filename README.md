@@ -95,7 +95,7 @@ Style using css
 * **B Tram Vu** 
 
 - [Link to Portfolio Site](#)
-- [Link to Github](#)
+- [Link to Github](https://github.com/vubao2303/Password-Generator)
 - [Link to LinkedIn](https://www.linkedin.com/in/tram-vu-866250121/)
 
 ## License
