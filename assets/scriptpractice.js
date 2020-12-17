@@ -4,12 +4,16 @@ var generateBtn = document.querySelector("#generate");
 // let user input a lenght of the password by using prompt
 function generatePassword () {
     var passwordLength = prompt ("How long would you like your password length to be? Please choose a length of at least 8 characters and no more than 128 characters.")
-  // make sure that user input number 8 to 128 only 
+    // // passwordLenght = ()
+    // for (var i= 8, i < passwordLength.length, i< 128) 
+    // math.floor(math.random)* 120   
+    // var lengthResult 
+
+
   if (8 > passwordLength || passwordLength > 128) {
       alert ("please choose between number 8 to 128")
   } 
 
-  // Choices for password 
   charactersChoices = {
     lowerCase:  ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"],
 
@@ -20,8 +24,6 @@ function generatePassword () {
     specialCharacters: ["!", "@", "#", "$", "%", "$", "(",")", "\'", "'", "*", "+", ",","-",".","/",":",";", "< ", "=", ">",
       "?", "[", "]", "\ ", "^", "_", "`", "{", "|", "}", "~"]
   } 
-
-  // 
   var charactersBase = []
   var lowerCase =
   confirm ("Would you like to include lower case?")
@@ -31,8 +33,6 @@ function generatePassword () {
   }
   }
   console.log(charactersBase)
-
-
   var upperCase =
   confirm ("Would you like to include Uper case?")
   if (upperCase) {
