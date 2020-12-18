@@ -3,7 +3,7 @@ var generateBtn = document.querySelector("#generate");
 
 // let user input a lenght of the password by using prompt
 function generatePassword () {
-    var passwordLength = prompt ("How long would you like your password length to be? Please choose a length of at least 8 characters and no more than 128 characters.")
+    var passwordLength = prompt ("How long would you like your password length to be? Password lenght must be at least 8 characters and no more than 128 characters.")
   // make sure that user input number 8 to 128 only 
   if (8 > passwordLength || passwordLength > 128) {
       alert ("Please choose between number 8 to 128")
@@ -59,7 +59,7 @@ function generatePassword () {
     console.log(charactersBase)
 
     if ((upperCase===false) && (lowerCase===false) && (number===false) && (specialCharacters === false)) {
-      alert ("Please choose at least one of the password criterias");
+      alert ("Please choose at least one of the password criteria");
     }
     // generate a password using Math.random
     else {var passWordResult = "";
