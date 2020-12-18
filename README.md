@@ -49,24 +49,39 @@ THEN the password is either displayed in an alert or written to the page
 
 
 ## Code Snippet
-<!-- what code and why -->
-```html
+Apply condition statement if and else to to perform different actions for different iput 
+```javascript
+if (8 > passwordLength || passwordLength > 128) {
+      alert ("Please choose between number 8 to 128")
+  } 
+  else { generatePassword () 
+  }
+```
+Apply objects, keys, properties, and method to list out character choices 
+```javascript
+charactersChoices = {
+  lowerCase:[], upperCase:[], number[], specialCharacters
+}
 
 ```
 
-<!-- what code and why -->
-```html
+Use Math.random function to generate a random password that includes user's criteria choices 
+```javascript
+ for (var i = 0; i < passwordLength; i++) {
+      passWordResult += charactersBase[Math.floor(Math.random() * charactersBase.length)]
+    }
+    return passWordResult
 
 ```
+Use function to display password result in the answer box 
 
-<!-- what code and why -->
-```html
+```javascript
 
-```
-
-Style using css 
-```html
- 
+ function writePassword() {
+    var password = generatePassword();
+    var passwordText = document.querySelector("#password");
+    passwordText.value = password;
+  }
 ```
     
 
