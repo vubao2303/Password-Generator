@@ -1,6 +1,6 @@
 # Password Generator
 
-This profect focused on building a responsive and interactive website that  generate a password for user 
+This profect focused on building a responsive and interactive website that  generate a random password for user. Password resutl must meet client's acceptance criteria such as: password length is  at least 8 characters and no more than 128 characters, users have the choice of upper case, lower case, numbers, and/or special characters. Handling input errors with alerts and conditional fucntion to ensure the most password generator  
 
 ## Site Picture
 ![Site](./assets/password-generator-picture.png)
@@ -23,33 +23,25 @@ This profect focused on building a responsive and interactive website that  gene
 [License](#License)
 
 ## Description of Page Building 
-* 
-* 
-
-## Acceptance Criteria (to be commented out)
-
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN prompted for character types to include in the password
-THEN I choose lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
-  
+* Build a pseudocode to develope a general idea of what do we need, why do we need it, and how to we tackle the task
+* Use provided code and add a javascript files to it to make the page function
+* Link html files with javascript files 
+* Create names for variables that hold different values 
+* Provide promps and alerts for user input
+  <ul> Acceptance Criteria
+  <li> Length: 8-128 characters </li>
+  <li> Character choices: lower case, uppercase, numbers, and/or special characters </li>
+  </ul> 
+* Construct conditional staments to perfom different actions for different input 
+  If user input does not meet acceptance ariteria, provide alert for user to choose again 
+* Use funciton generate password and math.random to generate passwords randomly
+  Password result should meet user's choice of lenght and character choices 
+* Display password result in card body 
+* Click generate password button to start again 
 
 
 ## Code Snippet
-Apply condition statement if and else to to perform different actions for different iput 
+Apply conditional statement if and else to to perform different actions for different iput 
 ```javascript
 if (8 > passwordLength || passwordLength > 128) {
       alert ("Please choose between number 8 to 128")
@@ -60,9 +52,8 @@ if (8 > passwordLength || passwordLength > 128) {
 Apply objects, keys, properties, and method to list out character choices 
 ```javascript
 charactersChoices = {
-  lowerCase:[], upperCase:[], number[], specialCharacters
+  lowerCase:[], upperCase:[], number:[], specialCharacters:[]
 }
-
 ```
 
 Use Math.random function to generate a random password that includes user's criteria choices 
@@ -71,7 +62,6 @@ Use Math.random function to generate a random password that includes user's crit
       passWordResult += charactersBase[Math.floor(Math.random() * charactersBase.length)]
     }
     return passWordResult
-
 ```
 Use function to display password result in the answer box 
 
@@ -102,14 +92,14 @@ Use function to display password result in the answer box
 
 ## Deployed Link
 
-* [See Live Site](#)
+* [See Live Site](https://vubao2303.github.io/Password-Generator/)
 
 
 ## Author
 
 * **B Tram Vu** 
 
-- [Link to Portfolio Site](#)
+- [Link to Portfolio Site](https://github.com/vubao2303)
 - [Link to Github](https://github.com/vubao2303/Password-Generator)
 - [Link to LinkedIn](https://www.linkedin.com/in/tram-vu-866250121/)
 
