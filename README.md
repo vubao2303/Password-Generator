@@ -5,12 +5,14 @@ This profect focused on building a responsive and interactive website that  gene
 ## Site Picture
 ![Site](./assets/password-generator-picture.png)
 
-# Table of contents 
+# Table of Contents 
 [Tittle](#Password-Generator)
 
 [Site Picutre](#Site-picture)
 
-[Description of Page Building ](#Description-of-Page-Building )
+[Table of Contents](#Table-of-Content)
+
+[Description of Page Building ](#Description-of-Page-Building)
 
 [Code Snippet](#Code-Snippet)
 
